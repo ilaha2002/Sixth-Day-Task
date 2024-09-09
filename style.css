@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    height: 85vh;
+}
+.calculator {
+    box-shadow: -3px 5px 5px rgba(50, 50, 50, 0.438);
+    background-color: rgba(50, 50, 50, 1);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 60px 30px;
+    position: absolute;
+    margin: 100px 0 0 550px;
+}
+.mainPart {
+    height: 600px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+.buttons {
+    width: 320px;
+    height: 420px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 20px;
+    grid: justify-end;                              /* ? */
+    gap: 10px;
+    left: 0;
+    margin: 20px 20px 20px 30px;
+}
+button {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    font-size: 30px;
+    border-style: none;
+    cursor: pointer; 
+}
+
+.area{
+    border-bottom: 2px solid rgba(116, 235, 213, 1);
+    width: 87%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 15px 0;
+}
+.answer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px
+}
+.enter{
+    display: flex;
+    justify-content: end;
+}
+.enter >span{
+    font-size: 40px;
+}
+input {
+    border: none;
+    background-color: rgba(50, 50, 50, 1);
+}
+.answer >div{
+    font-size: 60px;
+
+}
+.signs {
+    background-color: rgba(116, 235, 213, 1);
+    color: aliceblue;
+}
